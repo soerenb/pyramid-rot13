@@ -4,26 +4,26 @@
   <head>
     <title>ROT13 Decoder</title>
     <link rel="stylesheet" type="text/css" href="static/rot13.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="/static/rot13.js"></script>
   </head>
 
   <body>
-    <h1> ROT13/47 Encoder</h1>
-    <form method='POST'>
-      Encryption mode:
-      <div>
-      <label>
-        ROT13
-        <input type="radio" name="rot_mode" value="0" {{ "checked" if not mode}}>
-      </label>
-      <label>
-        ROT47
-        <input type="radio" name="rot_mode" value="1" {{ "checked" if mode}}>
-      </label>
-    </div>
-      <br>
-      <textarea name="text" rows="20" cols="120" autofocus placeholder="Enter text">{{text}}</textarea>
-      <br>
-      <input type="submit">
-    </form>
+    <h1>ROT13/47 Encoder</h1>
+    Encryption mode:
+    <label>
+      ROT13
+      <input type="radio" name="rot_mode" value="0" checked/>
+    </label>
+    <label>
+      ROT47
+      <input type="radio" name="rot_mode" value="1"/>
+    </label>
+    <br>
+    <textarea id="inputarea" rows="20" cols="120" autofocus placeholder="Enter text"></textarea>
+    <br>
+    <button id="submit-button" onclick="encryptText()">Encrypt</button>
   </body>
 </html>

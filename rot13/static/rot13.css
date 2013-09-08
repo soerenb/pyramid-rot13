@@ -1,8 +1,6 @@
 body {
-  position: relative;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-
   width: 800px;
   margin: 0 auto;
   padding: 10px;
@@ -32,10 +30,14 @@ label + label {
 textarea {
   width: 500px;
   height: 400px;
+  margin-top: 10px;
   font-size: 17px;
   font-family: serif;
 }
 
-input[type=submit] {
+#submit-button {
+  margin-top: 5px;
+  padding: 2px;
+  border-radius: 5px;
   font-size: 18px;
 }
