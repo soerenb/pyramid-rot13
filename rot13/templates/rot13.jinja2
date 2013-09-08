@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>ROT13 Decoder</title>
+    <link rel="stylesheet" type="text/css" href="static/rot13.css">
+  </head>
+
+  <body>
+    <h1> ROT13/47 Encoder</h1>
+    <form method='POST'>
+      Encryption mode:
+      <div>
+      <label>
+        ROT13
+        <input type="radio" name="rot_mode" value="0" {{ "checked" if not mode}}>
+      </label>
+      <label>
+        ROT47
+        <input type="radio" name="rot_mode" value="1" {{ "checked" if mode}}>
+      </label>
+    </div>
+      <br>
+      <textarea name="text" rows="20" cols="120" autofocus placeholder="Enter text">{{text}}</textarea>
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
