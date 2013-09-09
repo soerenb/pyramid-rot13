@@ -33,5 +33,11 @@ function encryptText()
 function loadFile()
 {
     $('#in-lfile').trigger('click')
-    return false
+}
+
+function clearText()
+{
+    var $ta = document.getElementById('inputarea')
+    $('#in-lfile').val("")
+    $ta.value = ""
 }
