@@ -41,3 +41,18 @@ function clearText()
     $('#in-lfile').val("")
     $ta.value = ""
 }
+
+function saveText()
+{
+    var $ta = document.getElementById('inputarea')
+    download("rot13.txt", $ta.value)
+}
+
+function download(filename, text)
+{
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+          encodeURIComponent(text));
+    pom.setAttribute('download', filename);
+    pom.click();
+}

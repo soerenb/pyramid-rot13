@@ -21,11 +21,12 @@
       ROT47
       <input type="radio" name="rot_mode" value="1"/>
     </label>
-      <button id="btn-lfile" class="btn" onclick="loadFile()">Load file</button><input type="file" id="in-lfile" accept="text/*"/>
-      <button id="btn-clear" class="btn" onclick="clearText()">Clear</button>
     <br>
     <textarea id="inputarea" rows="20" cols="120" autofocus placeholder="Enter text"></textarea>
     <br>
     <button id="btn-submit" class="btn" onclick="encryptText()">Encrypt</button>
+    <button id="btn-lfile" class="btn" onclick="loadFile()">Load</button><input type="file" id="in-lfile" accept="text/*"/>
+    <button id="btn-save" class="btn" onclick="saveText()">Save</button>
+    <button id="btn-clear" class="btn" onclick="clearText()">Clear</button>
   </body>
 </html>
