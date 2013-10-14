@@ -4,7 +4,6 @@
   <head>
     <title>ROT13 Decoder</title>
     <link rel="stylesheet" type="text/css" href="{{'rot13:static/rot13.css'|static_url}}">
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
   </head>
 
   <body>
@@ -21,10 +20,10 @@
     <br>
     <textarea id="inputarea" rows="20" cols="120" autofocus placeholder="Enter text"></textarea>
     <br>
-    <button id="btn-submit" class="btn" onclick="encryptText()">Encrypt</button>
-    <button id="btn-lfile" class="btn" onclick="loadFile()">Load</button><input type="file" id="in-lfile" accept="text/*"/>
-    <button id="btn-save" class="btn" onclick="saveText()">Save</button>
-    <button id="btn-clear" class="btn" onclick="clearText()">Clear</button>
+    <div id="btn-submit" class="btn" onclick="encryptText()" tabindex="0">Encrypt</div>
+    <div id="btn-lfile" class="btn" onclick="loadFile()" tabindex="0">Load</div><input type="file" id="in-lfile" accept="text/*"/>
+    <div id="btn-save" class="btn" onclick="saveText()" tabindex="0">Save</div>
+    <div id="btn-clear" class="btn" onclick="clearText()" tabindex="0">Clear</div>
 
     <!-- javascript sources -->
     <script type="text/javascript" src="{{'rot13:static/rot13.js'|static_url}}"></script>
