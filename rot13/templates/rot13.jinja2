@@ -5,9 +5,6 @@
     <title>ROT13 Decoder</title>
     <link rel="stylesheet" type="text/css" href="{{'rot13:static/rot13.css'|static_url}}">
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script type="text/javascript" src="{{'rot13:static/rot13.js'|static_url}}"></script>
   </head>
 
   <body>
@@ -28,5 +25,8 @@
     <button id="btn-lfile" class="btn" onclick="loadFile()">Load</button><input type="file" id="in-lfile" accept="text/*"/>
     <button id="btn-save" class="btn" onclick="saveText()">Save</button>
     <button id="btn-clear" class="btn" onclick="clearText()">Clear</button>
+
+    <!-- javascript sources -->
+    <script type="text/javascript" src="{{'rot13:static/rot13.js'|static_url}}"></script>
   </body>
 </html>
